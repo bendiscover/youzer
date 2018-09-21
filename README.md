@@ -1,8 +1,5 @@
 # youzer
-GitHub project for BuddyPress plugin Youzer.
-
-
-Submit all your customisations and we can help KaineLabs develop Youzer.
+Submit all your customisations and we can help KaineLabs develop the BuddyPress plugin Youzer.
 
 
 Note: If you are from KaineLabs, please DM me and I can transfer this ownership of this project to you.
