@@ -1,0 +1,41 @@
+<?php
+//This code goes in /wp-content/plugins/bp-custom.php - If you don't have this file, see this https://codex.buddypress.org/themes/bp-custom-php/
+
+/**
+ * Change 'Like' to 'Upvote' .
+ */
+function yzc_translate_text( $translated_text ) {
+    switch ( $translated_text ) {
+    // change #1 word here
+        case 'Like' :
+            $translated_text = __( 'Upvote', 'youzer' );
+            break;
+
+    // change #2 word here
+        case 'Unlike' :
+            $translated_text = __( 'Undo', 'youzer' );
+            break;
+
+    // change #3 word here
+        case 'liked this' :
+            $translated_text = __( 'upvoted this', 'youzer' );
+            break;
+
+    // change #4 word here
+        case 'People who liked this' :
+            $translated_text = __( 'People who upvoted this', 'youzer' );
+            break;
+
+    // change word #5 here
+        case 'My Favorites %s' :
+            $translated_text = __( 'My Upvotes %s', 'youzer' );
+            break;
+            
+    }
+    return $translated_text;
+}
+add_filter( 'gettext', 'yzc_translate_text', 30 );
+
+
+
+?>
