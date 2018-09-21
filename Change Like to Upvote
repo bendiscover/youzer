@@ -1,5 +1,6 @@
 <?php
 //This code goes in /wp-content/plugins/bp-custom.php - If you don't have this file, see this https://codex.buddypress.org/themes/bp-custom-php/
+//If you want to customise the below, note that there are only certain phrases you can change. You can only change phrases that appear in the language files /wp-content/plugins/youzer/languages. You can read these by downloading the relevant .po file and using the program https://poedit.net/
 
 /**
  * Change 'Like' to 'Upvote' .
