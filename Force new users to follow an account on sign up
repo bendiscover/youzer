@@ -1,0 +1,31 @@
+<?php
+//This code goes in /wp-content/plugins/bp-custom.php - If you don't have this file, see this https://codex.buddypress.org/themes/bp-custom-php/
+//If you want to customise the below, note that there are only certain phrases you can change. You can only change phrases that appear in the language files /wp-content/plugins/youzer/languages. You can read these by downloading the relevant .po file and using the program https://poedit.net/
+
+//You also need the BuddyPress Follow plugin installed for this to work:
+//https://wordpress.org/plugins/buddypress-followers/
+
+/**
+ * This code forces new users to follow certain accounts when they sign up. E.g. Like Tom from Myspace.
+ */
+function yzc_make_new_accounts_follows_specific_users( $user_id ) {
+    
+    
+    //PLEASE SWAP OUT THESE NUMBERS WITH THE IDs OF THE USERS THAT WILL GET FOLLOWED:   
+    
+    $leaders = array( 2, 4 );
+    
+    
+    foreach ( $leaders as $leader_id ) {
+    
+        // Get Follow Args.
+        $args = array(
+            'leader_id'   => $leader_id,
+            'follower_id' => $user_id,
+        );
+        // Follow .
+        bp_follow_start_following( $args );
+    
+    }
+}
+add_action( 'bp_core_signup_user', 'yzc_make_new_accounts_follows_specific_users' );
