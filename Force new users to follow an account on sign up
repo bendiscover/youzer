@@ -3,7 +3,7 @@
 //If you want to customise the below, note that there are only certain phrases you can change. You can only change phrases that appear in the language files /wp-content/plugins/youzer/languages. You can read these by downloading the relevant .po file and using the program https://poedit.net/
 
 //You also need the BuddyPress Follow plugin installed for this to work:
-//https://wordpress.org/plugins/buddypress-followers/
+//https://wordpress.org/plugins/buddypress-followers/ 
 
 /**
  * This code forces new users to follow certain accounts when they sign up. E.g. Like Tom from Myspace.
