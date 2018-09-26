@@ -2,6 +2,8 @@
 
 /*** 
 *This code filters the content of the global Activity Stream.
+*This code is untested
+*
 *Note that the proper way to do this is through Dashboard > Youzer panel > Wall Settings > Control Wall Posts Visibility
 ***/
 
