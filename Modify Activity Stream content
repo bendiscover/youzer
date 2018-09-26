@@ -1,0 +1,32 @@
+<?php 
+
+/*** 
+*This code filters the content of the global Activity Stream.
+*Note that the proper way to do this is through Dashboard > Youzer panel > Wall Settings > Control Wall Posts Visibility
+***/
+
+//Find activity-loop.php
+//Within that file find this code:
+
+if ( bp_has_activities( bp_ajax_querystring( 'activity' ) ) ) : 
+
+
+//Delete it or comment it out, and insert this instead
+//Include the filters you want (comma-seperated)
+
+if ( bp_has_activities( bp_ajax_querystring( 'activity' ) . '&action=
+  activity_status,
+  activity_photo
+  ') )
+
+//Here is the list of default filters
+//activity_status
+//activity_quote
+//activity_photo
+//activity_video
+//activity_audio
+//activity_slideshow
+//activity_link
+//activity_file
+
+?>
